@@ -111,7 +111,7 @@
     "category2": "Herramientas",
     "category3": "Procesadores",
     "iva": "21,00%",
-    "stock": 3
+    "stock": 2
   },
   {
     "id": "prod-1778110757189",
@@ -1914,7 +1914,7 @@
     "category3": "",
     "gallery": "img\\productos\\optico dX-123 mouse genius BLUE.png,img/productos/mouse-genius-usb-dx-123-blue/pic-2025020514-10e6e4384-1779142257728.jpg,img/productos/mouse-genius-usb-dx-123-blue/pic-2025020514-77a282182-1779142257970.jpg,img/productos/mouse-genius-usb-dx-123-blue/pic-2025020514-904536262-1779142258166.jpg,img/productos/mouse-genius-usb-dx-123-blue/pic-2025020515-8f14d2517-1779142258264.jpg",
     "iva": "10,50%",
-    "stock": 6
+    "stock": 5
   },
   {
     "img": "img\\productos\\mouse-genius-usb-dx-123-grey\\optico-dx-123-mouse-genius-grey-1778161744469.jpg",
@@ -3063,6 +3063,54 @@
     "stock": 1
   },
   {
+    "id": "prod-1781618582222",
+    "title": "COMBO WHITE GABINETE THUNDERSTRIKE +2 COOLERS ID COOLING+SPLITTER",
+    "img": "img/productos/gabinete-thunder-white-2-coolers-id-cooling-white/thunder-2coolers-id-cooling-1781618288187.jpg",
+    "gallery": "img/productos/gabinete-thunder-white-2-coolers-id-cooling-white/thunder-2coolers-id-cooling-1781618288187.jpg,img/productos/gabinete-thunder-white-2-coolers-id-cooling-white/thunderstrike-white-des-1781618694298.jpg,img/productos/gabinete-thunder-white-2-coolers-id-cooling-white/cooler-fan-id-cooling-fl-12025-blanco-des-1781618700905.jpg,img/productos/combo-white-gabinete-thunderstrike-2-coolers-id-cooling-splitter/splitter-fan-pwm-1x4-des-1781618931467.jpg",
+    "desc": "🖼️ Gabinete Raptor Thunder Strike White  \nEstilo gamer con refrigeración eficiente.\n\n⚙️ Compatibilidad: soporta placas madre MATX e ITX.\n\n🪟 Panel lateral de vidrio templado: muestra tus componentes con iluminación fija.\n\n❄️ Incluye 2 Coolers ID-Cooling FL-12025 de 120mm: flujo de aire constante para mantener tu hardware en óptimas temperaturas.\n\n🔧 Espacio interno optimizado: pensado para configuraciones compactas y potentes.\n\n✅ Una opción ideal para quienes buscan un gabinete elegante y con refrigeración confiable.",
+    "video": "",
+    "category": "gabinetes",
+    "category2": "destacados",
+    "subcategoria": "ITX/MATX",
+    "inStock": true,
+    "slug": "gabinete-thunder-white-2-coolers-id-cooling-white",
+    "price": 89000,
+    "priceLocal": 82000,
+    "banners": [],
+    "priceNum": "89000",
+    "cashPrice": "82000",
+    "videoUrl": "",
+    "iva": "",
+    "proximoIngreso": false,
+    "customButtons": [],
+    "category3": "",
+    "excludeFromExport": true
+  },
+  {
+    "id": "prod-1781619250277",
+    "title": "SUPER COMBO WHITE GABIENTE THUNDER+2 COOLERS+THERMALTAKE UX200",
+    "img": "img/productos/super-combo-white-gabiente-thunder-2-coolers-thermaltake-ux200/thunder-2coolers-id-cooling-thermaltake-ux200-1781619154325.jpg",
+    "gallery": "img/productos/super-combo-white-gabiente-thunder-2-coolers-thermaltake-ux200/thunder-2coolers-id-cooling-thermaltake-ux200-1781619154325.jpg,img/productos/super-combo-white-gabiente-thunder-2-coolers-thermaltake-ux200/thunderstrike-white-des-1781619311690.jpg,img/productos/super-combo-white-gabiente-thunder-2-coolers-thermaltake-ux200/cooler-fan-id-cooling-fl-12025-blanco-des-1781619323075.jpg,img/productos/super-combo-white-gabiente-thunder-2-coolers-thermaltake-ux200/splitter-fan-pwm-1x4-des-1781619333772.jpg,img/productos/super-combo-white-gabiente-thunder-2-coolers-thermaltake-ux200/thermaltake-ux-200-des-1781619340619.jpg",
+    "desc": "🖼️ Gabinete Raptor Thunder Strike White + Cooling Pack  \nRefrigeración eficiente y estética gamer en formato compacto.\n\n⚙️ Compatibilidad: soporta placas madre MATX e ITX.\n\n🪟 Panel lateral de vidrio templado: muestra tus componentes con iluminación fija.\n\n❄️ Incluye 2 Coolers ID-Cooling FL-12025 de 120mm: flujo de aire constante para mantener temperaturas óptimas.\n\n💡 Cooler Thermaltake UX200 ARGB: disipador con iluminación ARGB y ventilador de 120mm.\n\n🔥 Rendimiento térmico: diseñado para CPUs de hasta 170W de consumo.\n\n🔧 Espacio interno optimizado: pensado para configuraciones compactas y potentes.\n\n✅ Una combinación ideal para quienes buscan un gabinete elegante con refrigeración confiable y un cooler ARGB de alto rendimiento.",
+    "video": "",
+    "category": "gabinetes",
+    "category2": "destacados",
+    "subcategoria": "ITX/MATX",
+    "inStock": true,
+    "slug": "super-combo-white-gabiente-thunder-2-coolers-thermaltake-ux200",
+    "price": 145500,
+    "priceLocal": 135000,
+    "banners": [],
+    "priceNum": "145500",
+    "cashPrice": "135000",
+    "videoUrl": "",
+    "iva": "",
+    "proximoIngreso": false,
+    "customButtons": [],
+    "category3": "",
+    "excludeFromExport": true
+  },
+  {
     "id": "prod-1780001581399",
     "title": "PC GAMER RAPTOR THUNDER WHITE R7 5700+RTX 5050 VENTUS+512GB",
     "img": "img/productos/pc-gamer-raptor-thunder-white-r7-5700-rtx-5050-ventus-512gb/pcgamer-white-5050-1780006397322.jpg",
@@ -3439,7 +3487,7 @@
     "title": "PC GAMER ECLYPSE R7 5700+RTX5060+WATER COOLING",
     "img": "img/productos/pc-gamer-eclypse-r7-5700-rtx5060-water-cooling/pc-gamer-eclypse-rtx5060-16gb-1780006662888.jpg",
     "gallery": "img/productos/pc-gamer-eclypse-r7-5700-rtx5060-water-cooling/pc-gamer-eclypse-rtx5060-16gb-1780006662888.jpg",
-    "desc": "🎮 PC Gamer Ryzen 7 5700 + RTX 5060 Ventus X2  \nMáxima potencia y refrigeración avanzada para gaming extremo.\n\n⚙️ Procesador: AMD Ryzen 7 5700\n\n🧩 Motherboard: MSI A520M-A PRO (AM4)\n\n💾 Memoria RAM: Hiksemi Hiker DDR4 16GB 3200MHz\n\n🚀 Almacenamiento: SSD NVMe 512GB ultrarrápido\n\n🔌 Fuente: 650W 80 Plus Bronze\n\n🖼️ Gabinete Gamer: panel de vidrio templado con iluminación RGB\n\n🎨 Placa de video: NVIDIA RTX 5060 Ventus X2 8GB GDDR7\n\n��� Refrigeración líquida: Raptor Aqua Core 360 – triple ventilador para máxima disipación térmica\n\n🔥 Ideal para gamers y creadores que buscan rendimiento de última generación, refrigeración eficiente y estética gamer premium con RGB.",
+    "desc": "🎮 PC Gamer Ryzen 7 5700 + RTX 5060 Ventus X2  \nMáxima potencia y refrigeración avanzada para gaming extremo.\n\n⚙️ Procesador: AMD Ryzen 7 5700\n\n🧩 Motherboard: MSI A520M-A PRO (AM4)\n\n💾 Memoria RAM: Hiksemi Hiker DDR4 16GB 3200MHz\n\n🚀 Almacenamiento: SSD NVMe 512GB ultrarrápido\n\n🔌 Fuente: 650W 80 Plus Bronze\n\n🖼️ Gabinete Gamer: panel de vidrio templado con iluminación RGB\n\n🎨 Placa de video: NVIDIA RTX 5060 Ventus X2 8GB GDDR7\n\n💧 Refrigeración líquida: Raptor Aqua Core 360 – triple ventilador para máxima disipación térmica\n\n🔥 Ideal para gamers y creadores que buscan rendimiento de última generación, refrigeración eficiente y estética gamer premium con RGB.",
     "video": "",
     "category": "Notebook",
     "category2": "",
