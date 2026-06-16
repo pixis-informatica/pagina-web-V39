@@ -471,6 +471,7 @@ window.PixisState = {
         css += `
           ${cardsSelectorGamer} {
             background-color: ${gamerCardBg} !important;
+            background-image: none !important;
             border: 2px solid #ffd700 !important;
             box-shadow: 0 0 15px rgba(212, 175, 55, 0.4) !important;
             animation: none !important;
@@ -483,6 +484,7 @@ window.PixisState = {
             box-shadow: none !important;
             animation: none !important;
             background-color: ${gamerCardBg} !important;
+            background-image: none !important;
           }
         `;
       } else if (settings.borderColorGamer) {
@@ -492,6 +494,7 @@ window.PixisState = {
             box-shadow: 0 0 15px ${settings.borderColorGamer}40 !important;
             animation: none !important;
             background-color: ${gamerCardBg} !important;
+            background-image: none !important;
           }
         `;
       }
@@ -515,6 +518,7 @@ window.PixisState = {
         css += `
           ${cardsSelectorOficina} {
             background-color: ${oficinaCardBg} !important;
+            background-image: none !important;
             border: 2px solid #ffd700 !important;
             box-shadow: 0 0 15px rgba(212, 175, 55, 0.4) !important;
             animation: none !important;
@@ -527,6 +531,7 @@ window.PixisState = {
             box-shadow: none !important;
             animation: none !important;
             background-color: ${oficinaCardBg} !important;
+            background-image: none !important;
           }
         `;
       } else if (settings.borderColorOficina) {
@@ -536,6 +541,7 @@ window.PixisState = {
             box-shadow: 0 0 10px ${settings.borderColorOficina}30 !important;
             animation: none !important;
             background-color: ${oficinaCardBg} !important;
+            background-image: none !important;
           }
         `;
       }

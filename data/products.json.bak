@@ -947,7 +947,7 @@
     "subcategoria": "256GB",
     "price": 91000,
     "priceLocal": 86500,
-    "inStock": true,
+    "inStock": false,
     "id": "prod-disco-ssd-m-2-hiksemi-256gb-wa-481",
     "priceNum": "91000",
     "cashPrice": "86500",
