@@ -40,7 +40,9 @@
     <meta name="description"
         content="Tienda de computación online en Santiago del Estero. Venta de accesorios gamer, hardware de alto rendimiento y servicio técnico especializado.">
     <meta name="google-site-verification" content="LRXHYYrAKTCHW292rR5zcKtXTbwqrrrdTsuEQtSS0_c" />
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@400;700&family=Montserrat:wght@400;700&family=Roboto:wght@400;700&family=Outfit:wght@400;700&family=Poppins:wght@400;700&family=Lato:wght@400;700&family=Open+Sans:wght@400;700&family=Oswald:wght@400;700&family=Raleway:wght@400;700&family=Nunito:wght@400;700&family=Ubuntu:wght@400;700&family=Playfair+Display:wght@400;700&family=Cinzel:wght@400;700&family=Kanit:wght@400;700&family=Bebas+Neue&family=Fira+Sans:wght@400;700&family=Quicksand:wght@400;700&family=Syne:wght@400;700&family=Teko:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@400;700&family=Montserrat:wght@400;700&family=Roboto:wght@400;700&family=Outfit:wght@400;700&family=Poppins:wght@400;700&family=Lato:wght@400;700&family=Open+Sans:wght@400;700&family=Oswald:wght@400;700&family=Raleway:wght@400;700&family=Nunito:wght@400;700&family=Ubuntu:wght@400;700&family=Playfair+Display:wght@400;700&family=Cinzel:wght@400;700&family=Kanit:wght@400;700&family=Bebas+Neue&family=Fira+Sans:wght@400;700&family=Quicksand:wght@400;700&family=Syne:wght@400;700&family=Teko:wght@400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css?v=1.9752">
     <link rel="stylesheet" href="css/lightmode.css?v=1.9752" id="lightmode" disabled>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -64,13 +66,16 @@
             overflow-x: hidden !important;
             height: auto !important;
         }
+
         body.product-page-active {
             overflow: visible !important;
             overflow-y: visible !important;
-            overflow-x: visible !important; /* 🔥 Evita que el navegador auto-convierta overflow-y en scroll/auto */
+            overflow-x: visible !important;
+            /* 🔥 Evita que el navegador auto-convierta overflow-y en scroll/auto */
             height: auto !important;
             min-height: 100% !important;
         }
+
         body.product-page-active .modal-product {
             position: static !important;
             display: block !important;
@@ -81,6 +86,7 @@
             overflow-y: visible !important;
             overflow-x: visible !important;
         }
+
         body.product-page-active .modal-content {
             position: relative !important;
             display: block !important;
@@ -90,13 +96,16 @@
             overflow-y: visible !important;
             overflow-x: visible !important;
         }
+
         @media (max-width: 768px) {
+
             body.product-page-active .modal-product,
             body.product-page-active .modal-content {
                 overflow-x: hidden !important;
                 max-width: 100vw !important;
             }
         }
+
         body.product-page-active .modal-info,
         body.product-page-active .modal-grid,
         body.product-page-active .modal-desc {
@@ -283,7 +292,8 @@
                     <span class="categorias-titulo-icon">🗂️</span>
                     <span class="categorias-titulo">MENÚ DE PRODUCTOS</span>
                 </div>
-                <button class="menu-close-btn" onclick="if(window.closePixisMenu){window.closePixisMenu()}else{document.getElementById('btnCategorias').click()}">✕</button>
+                <button class="menu-close-btn"
+                    onclick="if(window.closePixisMenu){window.closePixisMenu()}else{document.getElementById('btnCategorias').click()}">✕</button>
             </div>
 
             <div class="categorias-lista">
@@ -380,10 +390,21 @@
                     <div class="filtros-categoria" data-static-placeholder="true">
                         <button class="btn-filtro activo" data-filter="all">Todos</button>
                     </div>
-        <button class="btn-view-toggle" title="Cambiar vista" aria-label="Cambiar vista">
-            <svg class="icon-grid" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
-            <svg class="icon-list" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="4" width="18" height="3"/><rect x="3" y="10.5" width="18" height="3"/><rect x="3" y="17" width="18" height="3"/></svg>
-        </button>
+                    <button class="btn-view-toggle" title="Cambiar vista" aria-label="Cambiar vista">
+                        <svg class="icon-grid" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            viewBox="0 0 24 24" fill="currentColor">
+                            <rect x="3" y="3" width="7" height="7" />
+                            <rect x="14" y="3" width="7" height="7" />
+                            <rect x="3" y="14" width="7" height="7" />
+                            <rect x="14" y="14" width="7" height="7" />
+                        </svg>
+                        <svg class="icon-list" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            viewBox="0 0 24 24" fill="currentColor">
+                            <rect x="3" y="4" width="18" height="3" />
+                            <rect x="3" y="10.5" width="18" height="3" />
+                            <rect x="3" y="17" width="18" height="3" />
+                        </svg>
+                    </button>
                 </div>
             </div>
             <div class="productos">
@@ -404,10 +425,21 @@
                     <div class="filtros-categoria" data-static-placeholder="true">
                         <button class="btn-filtro activo" data-filter="all">Todos</button>
                     </div>
-        <button class="btn-view-toggle" title="Cambiar vista" aria-label="Cambiar vista">
-            <svg class="icon-grid" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
-            <svg class="icon-list" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="4" width="18" height="3"/><rect x="3" y="10.5" width="18" height="3"/><rect x="3" y="17" width="18" height="3"/></svg>
-        </button>
+                    <button class="btn-view-toggle" title="Cambiar vista" aria-label="Cambiar vista">
+                        <svg class="icon-grid" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            viewBox="0 0 24 24" fill="currentColor">
+                            <rect x="3" y="3" width="7" height="7" />
+                            <rect x="14" y="3" width="7" height="7" />
+                            <rect x="3" y="14" width="7" height="7" />
+                            <rect x="14" y="14" width="7" height="7" />
+                        </svg>
+                        <svg class="icon-list" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            viewBox="0 0 24 24" fill="currentColor">
+                            <rect x="3" y="4" width="18" height="3" />
+                            <rect x="3" y="10.5" width="18" height="3" />
+                            <rect x="3" y="17" width="18" height="3" />
+                        </svg>
+                    </button>
                 </div>
             </div>
             <div class="productos">
@@ -430,10 +462,21 @@
                         <button class="btn-filtro" data-filter="ITX/MATX/ATX">Gabinetes ITX/MATX/ATX</button>
                         <button class="btn-filtro" data-filter="ITX/MATX">Gabinetes ITX/MATX</button>
                     </div>
-        <button class="btn-view-toggle" title="Cambiar vista" aria-label="Cambiar vista">
-            <svg class="icon-grid" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
-            <svg class="icon-list" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="4" width="18" height="3"/><rect x="3" y="10.5" width="18" height="3"/><rect x="3" y="17" width="18" height="3"/></svg>
-        </button>
+                    <button class="btn-view-toggle" title="Cambiar vista" aria-label="Cambiar vista">
+                        <svg class="icon-grid" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            viewBox="0 0 24 24" fill="currentColor">
+                            <rect x="3" y="3" width="7" height="7" />
+                            <rect x="14" y="3" width="7" height="7" />
+                            <rect x="3" y="14" width="7" height="7" />
+                            <rect x="14" y="14" width="7" height="7" />
+                        </svg>
+                        <svg class="icon-list" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            viewBox="0 0 24 24" fill="currentColor">
+                            <rect x="3" y="4" width="18" height="3" />
+                            <rect x="3" y="10.5" width="18" height="3" />
+                            <rect x="3" y="17" width="18" height="3" />
+                        </svg>
+                    </button>
                 </div>
             </div>
             <div class="productos">
@@ -452,10 +495,21 @@
                     <div class="filtros-categoria" data-static-placeholder="true">
                         <button class="btn-filtro activo" data-filter="all">Todos</button>
                     </div>
-        <button class="btn-view-toggle" title="Cambiar vista" aria-label="Cambiar vista">
-            <svg class="icon-grid" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
-            <svg class="icon-list" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="4" width="18" height="3"/><rect x="3" y="10.5" width="18" height="3"/><rect x="3" y="17" width="18" height="3"/></svg>
-        </button>
+                    <button class="btn-view-toggle" title="Cambiar vista" aria-label="Cambiar vista">
+                        <svg class="icon-grid" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            viewBox="0 0 24 24" fill="currentColor">
+                            <rect x="3" y="3" width="7" height="7" />
+                            <rect x="14" y="3" width="7" height="7" />
+                            <rect x="3" y="14" width="7" height="7" />
+                            <rect x="14" y="14" width="7" height="7" />
+                        </svg>
+                        <svg class="icon-list" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            viewBox="0 0 24 24" fill="currentColor">
+                            <rect x="3" y="4" width="18" height="3" />
+                            <rect x="3" y="10.5" width="18" height="3" />
+                            <rect x="3" y="17" width="18" height="3" />
+                        </svg>
+                    </button>
                 </div>
             </div>
             <div class="productos">
@@ -475,10 +529,21 @@
                     <div class="filtros-categoria" data-static-placeholder="true">
                         <button class="btn-filtro activo" data-filter="all">Todos</button>
                     </div>
-        <button class="btn-view-toggle" title="Cambiar vista" aria-label="Cambiar vista">
-            <svg class="icon-grid" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
-            <svg class="icon-list" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="4" width="18" height="3"/><rect x="3" y="10.5" width="18" height="3"/><rect x="3" y="17" width="18" height="3"/></svg>
-        </button>
+                    <button class="btn-view-toggle" title="Cambiar vista" aria-label="Cambiar vista">
+                        <svg class="icon-grid" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            viewBox="0 0 24 24" fill="currentColor">
+                            <rect x="3" y="3" width="7" height="7" />
+                            <rect x="14" y="3" width="7" height="7" />
+                            <rect x="3" y="14" width="7" height="7" />
+                            <rect x="14" y="14" width="7" height="7" />
+                        </svg>
+                        <svg class="icon-list" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            viewBox="0 0 24 24" fill="currentColor">
+                            <rect x="3" y="4" width="18" height="3" />
+                            <rect x="3" y="10.5" width="18" height="3" />
+                            <rect x="3" y="17" width="18" height="3" />
+                        </svg>
+                    </button>
                 </div>
             </div>
             <div class="productos">
@@ -497,10 +562,21 @@
                     <div class="filtros-categoria" data-static-placeholder="true">
                         <button class="btn-filtro activo" data-filter="all">Todos</button>
                     </div>
-        <button class="btn-view-toggle" title="Cambiar vista" aria-label="Cambiar vista">
-            <svg class="icon-grid" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
-            <svg class="icon-list" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="4" width="18" height="3"/><rect x="3" y="10.5" width="18" height="3"/><rect x="3" y="17" width="18" height="3"/></svg>
-        </button>
+                    <button class="btn-view-toggle" title="Cambiar vista" aria-label="Cambiar vista">
+                        <svg class="icon-grid" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            viewBox="0 0 24 24" fill="currentColor">
+                            <rect x="3" y="3" width="7" height="7" />
+                            <rect x="14" y="3" width="7" height="7" />
+                            <rect x="3" y="14" width="7" height="7" />
+                            <rect x="14" y="14" width="7" height="7" />
+                        </svg>
+                        <svg class="icon-list" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            viewBox="0 0 24 24" fill="currentColor">
+                            <rect x="3" y="4" width="18" height="3" />
+                            <rect x="3" y="10.5" width="18" height="3" />
+                            <rect x="3" y="17" width="18" height="3" />
+                        </svg>
+                    </button>
                 </div>
             </div>
             <div class="productos">
@@ -520,10 +596,21 @@
                     <div class="filtros-categoria" data-static-placeholder="true">
                         <button class="btn-filtro activo" data-filter="all">Todos</button>
                     </div>
-        <button class="btn-view-toggle" title="Cambiar vista" aria-label="Cambiar vista">
-            <svg class="icon-grid" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
-            <svg class="icon-list" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="4" width="18" height="3"/><rect x="3" y="10.5" width="18" height="3"/><rect x="3" y="17" width="18" height="3"/></svg>
-        </button>
+                    <button class="btn-view-toggle" title="Cambiar vista" aria-label="Cambiar vista">
+                        <svg class="icon-grid" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            viewBox="0 0 24 24" fill="currentColor">
+                            <rect x="3" y="3" width="7" height="7" />
+                            <rect x="14" y="3" width="7" height="7" />
+                            <rect x="3" y="14" width="7" height="7" />
+                            <rect x="14" y="14" width="7" height="7" />
+                        </svg>
+                        <svg class="icon-list" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            viewBox="0 0 24 24" fill="currentColor">
+                            <rect x="3" y="4" width="18" height="3" />
+                            <rect x="3" y="10.5" width="18" height="3" />
+                            <rect x="3" y="17" width="18" height="3" />
+                        </svg>
+                    </button>
                 </div>
             </div>
             <div class="productos">
@@ -542,10 +629,21 @@
                     <div class="filtros-categoria" data-static-placeholder="true">
                         <button class="btn-filtro activo" data-filter="all">Todos</button>
                     </div>
-        <button class="btn-view-toggle" title="Cambiar vista" aria-label="Cambiar vista">
-            <svg class="icon-grid" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
-            <svg class="icon-list" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="4" width="18" height="3"/><rect x="3" y="10.5" width="18" height="3"/><rect x="3" y="17" width="18" height="3"/></svg>
-        </button>
+                    <button class="btn-view-toggle" title="Cambiar vista" aria-label="Cambiar vista">
+                        <svg class="icon-grid" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            viewBox="0 0 24 24" fill="currentColor">
+                            <rect x="3" y="3" width="7" height="7" />
+                            <rect x="14" y="3" width="7" height="7" />
+                            <rect x="3" y="14" width="7" height="7" />
+                            <rect x="14" y="14" width="7" height="7" />
+                        </svg>
+                        <svg class="icon-list" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            viewBox="0 0 24 24" fill="currentColor">
+                            <rect x="3" y="4" width="18" height="3" />
+                            <rect x="3" y="10.5" width="18" height="3" />
+                            <rect x="3" y="17" width="18" height="3" />
+                        </svg>
+                    </button>
                 </div>
             </div>
             <div class="productos">
@@ -564,10 +662,21 @@
                     <div class="filtros-categoria" data-static-placeholder="true">
                         <button class="btn-filtro activo" data-filter="all">Todos</button>
                     </div>
-        <button class="btn-view-toggle" title="Cambiar vista" aria-label="Cambiar vista">
-            <svg class="icon-grid" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
-            <svg class="icon-list" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="4" width="18" height="3"/><rect x="3" y="10.5" width="18" height="3"/><rect x="3" y="17" width="18" height="3"/></svg>
-        </button>
+                    <button class="btn-view-toggle" title="Cambiar vista" aria-label="Cambiar vista">
+                        <svg class="icon-grid" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            viewBox="0 0 24 24" fill="currentColor">
+                            <rect x="3" y="3" width="7" height="7" />
+                            <rect x="14" y="3" width="7" height="7" />
+                            <rect x="3" y="14" width="7" height="7" />
+                            <rect x="14" y="14" width="7" height="7" />
+                        </svg>
+                        <svg class="icon-list" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            viewBox="0 0 24 24" fill="currentColor">
+                            <rect x="3" y="4" width="18" height="3" />
+                            <rect x="3" y="10.5" width="18" height="3" />
+                            <rect x="3" y="17" width="18" height="3" />
+                        </svg>
+                    </button>
                 </div>
             </div>
             <div class="productos">
@@ -586,10 +695,21 @@
                     <div class="filtros-categoria" data-static-placeholder="true">
                         <button class="btn-filtro activo" data-filter="all">Todos</button>
                     </div>
-        <button class="btn-view-toggle" title="Cambiar vista" aria-label="Cambiar vista">
-            <svg class="icon-grid" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
-            <svg class="icon-list" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="4" width="18" height="3"/><rect x="3" y="10.5" width="18" height="3"/><rect x="3" y="17" width="18" height="3"/></svg>
-        </button>
+                    <button class="btn-view-toggle" title="Cambiar vista" aria-label="Cambiar vista">
+                        <svg class="icon-grid" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            viewBox="0 0 24 24" fill="currentColor">
+                            <rect x="3" y="3" width="7" height="7" />
+                            <rect x="14" y="3" width="7" height="7" />
+                            <rect x="3" y="14" width="7" height="7" />
+                            <rect x="14" y="14" width="7" height="7" />
+                        </svg>
+                        <svg class="icon-list" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            viewBox="0 0 24 24" fill="currentColor">
+                            <rect x="3" y="4" width="18" height="3" />
+                            <rect x="3" y="10.5" width="18" height="3" />
+                            <rect x="3" y="17" width="18" height="3" />
+                        </svg>
+                    </button>
                 </div>
             </div>
             <div class="productos">
@@ -608,10 +728,21 @@
                     <div class="filtros-categoria" data-static-placeholder="true">
                         <button class="btn-filtro activo" data-filter="all">Todos</button>
                     </div>
-        <button class="btn-view-toggle" title="Cambiar vista" aria-label="Cambiar vista">
-            <svg class="icon-grid" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
-            <svg class="icon-list" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="4" width="18" height="3"/><rect x="3" y="10.5" width="18" height="3"/><rect x="3" y="17" width="18" height="3"/></svg>
-        </button>
+                    <button class="btn-view-toggle" title="Cambiar vista" aria-label="Cambiar vista">
+                        <svg class="icon-grid" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            viewBox="0 0 24 24" fill="currentColor">
+                            <rect x="3" y="3" width="7" height="7" />
+                            <rect x="14" y="3" width="7" height="7" />
+                            <rect x="3" y="14" width="7" height="7" />
+                            <rect x="14" y="14" width="7" height="7" />
+                        </svg>
+                        <svg class="icon-list" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            viewBox="0 0 24 24" fill="currentColor">
+                            <rect x="3" y="4" width="18" height="3" />
+                            <rect x="3" y="10.5" width="18" height="3" />
+                            <rect x="3" y="17" width="18" height="3" />
+                        </svg>
+                    </button>
                 </div>
             </div>
             <div class="productos">
@@ -633,10 +764,21 @@
                         <button class="btn-filtro" data-filter="Diseño Ergonomico">Diseño Ergonomicas</button>
                         <button class="btn-filtro" data-filter="Escritorio">Escritorios</button>
                     </div>
-        <button class="btn-view-toggle" title="Cambiar vista" aria-label="Cambiar vista">
-            <svg class="icon-grid" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
-            <svg class="icon-list" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="4" width="18" height="3"/><rect x="3" y="10.5" width="18" height="3"/><rect x="3" y="17" width="18" height="3"/></svg>
-        </button>
+                    <button class="btn-view-toggle" title="Cambiar vista" aria-label="Cambiar vista">
+                        <svg class="icon-grid" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            viewBox="0 0 24 24" fill="currentColor">
+                            <rect x="3" y="3" width="7" height="7" />
+                            <rect x="14" y="3" width="7" height="7" />
+                            <rect x="3" y="14" width="7" height="7" />
+                            <rect x="14" y="14" width="7" height="7" />
+                        </svg>
+                        <svg class="icon-list" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            viewBox="0 0 24 24" fill="currentColor">
+                            <rect x="3" y="4" width="18" height="3" />
+                            <rect x="3" y="10.5" width="18" height="3" />
+                            <rect x="3" y="17" width="18" height="3" />
+                        </svg>
+                    </button>
                 </div>
             </div>
             <div class="productos">
@@ -654,10 +796,21 @@
                     <div class="filtros-categoria" data-static-placeholder="true">
                         <button class="btn-filtro activo" data-filter="all">Todos</button>
                     </div>
-        <button class="btn-view-toggle" title="Cambiar vista" aria-label="Cambiar vista">
-            <svg class="icon-grid" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
-            <svg class="icon-list" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="4" width="18" height="3"/><rect x="3" y="10.5" width="18" height="3"/><rect x="3" y="17" width="18" height="3"/></svg>
-        </button>
+                    <button class="btn-view-toggle" title="Cambiar vista" aria-label="Cambiar vista">
+                        <svg class="icon-grid" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            viewBox="0 0 24 24" fill="currentColor">
+                            <rect x="3" y="3" width="7" height="7" />
+                            <rect x="14" y="3" width="7" height="7" />
+                            <rect x="3" y="14" width="7" height="7" />
+                            <rect x="14" y="14" width="7" height="7" />
+                        </svg>
+                        <svg class="icon-list" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            viewBox="0 0 24 24" fill="currentColor">
+                            <rect x="3" y="4" width="18" height="3" />
+                            <rect x="3" y="10.5" width="18" height="3" />
+                            <rect x="3" y="17" width="18" height="3" />
+                        </svg>
+                    </button>
                 </div>
             </div>
             <div class="productos">
@@ -675,10 +828,21 @@
                     <div class="filtros-categoria" data-static-placeholder="true">
                         <button class="btn-filtro activo" data-filter="all">Todos</button>
                     </div>
-        <button class="btn-view-toggle" title="Cambiar vista" aria-label="Cambiar vista">
-            <svg class="icon-grid" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
-            <svg class="icon-list" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="4" width="18" height="3"/><rect x="3" y="10.5" width="18" height="3"/><rect x="3" y="17" width="18" height="3"/></svg>
-        </button>
+                    <button class="btn-view-toggle" title="Cambiar vista" aria-label="Cambiar vista">
+                        <svg class="icon-grid" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            viewBox="0 0 24 24" fill="currentColor">
+                            <rect x="3" y="3" width="7" height="7" />
+                            <rect x="14" y="3" width="7" height="7" />
+                            <rect x="3" y="14" width="7" height="7" />
+                            <rect x="14" y="14" width="7" height="7" />
+                        </svg>
+                        <svg class="icon-list" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            viewBox="0 0 24 24" fill="currentColor">
+                            <rect x="3" y="4" width="18" height="3" />
+                            <rect x="3" y="10.5" width="18" height="3" />
+                            <rect x="3" y="17" width="18" height="3" />
+                        </svg>
+                    </button>
                 </div>
             </div>
             <div class="productos">
@@ -697,10 +861,21 @@
                     <div class="filtros-categoria" data-static-placeholder="true">
                         <button class="btn-filtro activo" data-filter="all">Todos</button>
                     </div>
-        <button class="btn-view-toggle" title="Cambiar vista" aria-label="Cambiar vista">
-            <svg class="icon-grid" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
-            <svg class="icon-list" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="4" width="18" height="3"/><rect x="3" y="10.5" width="18" height="3"/><rect x="3" y="17" width="18" height="3"/></svg>
-        </button>
+                    <button class="btn-view-toggle" title="Cambiar vista" aria-label="Cambiar vista">
+                        <svg class="icon-grid" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            viewBox="0 0 24 24" fill="currentColor">
+                            <rect x="3" y="3" width="7" height="7" />
+                            <rect x="14" y="3" width="7" height="7" />
+                            <rect x="3" y="14" width="7" height="7" />
+                            <rect x="14" y="14" width="7" height="7" />
+                        </svg>
+                        <svg class="icon-list" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            viewBox="0 0 24 24" fill="currentColor">
+                            <rect x="3" y="4" width="18" height="3" />
+                            <rect x="3" y="10.5" width="18" height="3" />
+                            <rect x="3" y="17" width="18" height="3" />
+                        </svg>
+                    </button>
                 </div>
             </div>
             <div class="productos">
@@ -721,10 +896,21 @@
                     <div class="filtros-categoria" data-static-placeholder="true">
                         <button class="btn-filtro activo" data-filter="all">Todos</button>
                     </div>
-        <button class="btn-view-toggle" title="Cambiar vista" aria-label="Cambiar vista">
-            <svg class="icon-grid" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
-            <svg class="icon-list" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="4" width="18" height="3"/><rect x="3" y="10.5" width="18" height="3"/><rect x="3" y="17" width="18" height="3"/></svg>
-        </button>
+                    <button class="btn-view-toggle" title="Cambiar vista" aria-label="Cambiar vista">
+                        <svg class="icon-grid" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            viewBox="0 0 24 24" fill="currentColor">
+                            <rect x="3" y="3" width="7" height="7" />
+                            <rect x="14" y="3" width="7" height="7" />
+                            <rect x="3" y="14" width="7" height="7" />
+                            <rect x="14" y="14" width="7" height="7" />
+                        </svg>
+                        <svg class="icon-list" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            viewBox="0 0 24 24" fill="currentColor">
+                            <rect x="3" y="4" width="18" height="3" />
+                            <rect x="3" y="10.5" width="18" height="3" />
+                            <rect x="3" y="17" width="18" height="3" />
+                        </svg>
+                    </button>
                 </div>
             </div>
             <div class="productos">
@@ -743,10 +929,21 @@
                         <button class="btn-filtro activo" data-filter="all">Todos</button>
                         <button class="btn-filtro" data-filter="Camara de seguridad">Camara de seguridad</button>
                     </div>
-        <button class="btn-view-toggle" title="Cambiar vista" aria-label="Cambiar vista">
-            <svg class="icon-grid" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
-            <svg class="icon-list" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="4" width="18" height="3"/><rect x="3" y="10.5" width="18" height="3"/><rect x="3" y="17" width="18" height="3"/></svg>
-        </button>
+                    <button class="btn-view-toggle" title="Cambiar vista" aria-label="Cambiar vista">
+                        <svg class="icon-grid" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            viewBox="0 0 24 24" fill="currentColor">
+                            <rect x="3" y="3" width="7" height="7" />
+                            <rect x="14" y="3" width="7" height="7" />
+                            <rect x="3" y="14" width="7" height="7" />
+                            <rect x="14" y="14" width="7" height="7" />
+                        </svg>
+                        <svg class="icon-list" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            viewBox="0 0 24 24" fill="currentColor">
+                            <rect x="3" y="4" width="18" height="3" />
+                            <rect x="3" y="10.5" width="18" height="3" />
+                            <rect x="3" y="17" width="18" height="3" />
+                        </svg>
+                    </button>
                 </div>
             </div>
             <div class="productos">
@@ -1246,8 +1443,11 @@
 
         <div class="modal-content" data-pixis-id="product-page-content" data-pixis-type="sections">
             <div class="product-page-back-container">
-                <a class="modal-close" data-pixis-id="product-btn-back" data-pixis-type="texts"><i class="fas fa-arrow-left"></i> Volver al Catálogo</a>
-                <a class="btnCategorias" data-pixis-id="product-btn-menu" data-pixis-type="texts" onclick="if(window.togglePixisMenu){window.togglePixisMenu(event)}else{document.getElementById('btnCategorias').click()}"><span>Menú de
+                <a class="modal-close" data-pixis-id="product-btn-back" data-pixis-type="texts"><i
+                        class="fas fa-arrow-left"></i> Volver al Catálogo</a>
+                <a class="btnCategorias" data-pixis-id="product-btn-menu" data-pixis-type="texts"
+                    onclick="if(window.togglePixisMenu){window.togglePixisMenu(event)}else{document.getElementById('btnCategorias').click()}"><span>Menú
+                        de
                         Productos</span></a>
             </div>
 
@@ -1405,7 +1605,7 @@
                     }
                 })();
             </script>
-            <script src="js/versionalizador.js?v=1.9753"></script>
+            <script src="js/versionalizador.js?v=1.9756"></script>
 
 
             <!-- ========================= LIGHTBOX IMAGEN COMPLETA ========================= -->

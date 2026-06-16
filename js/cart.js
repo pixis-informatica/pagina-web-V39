@@ -4152,18 +4152,20 @@ function toggleTheme() {
     body.classList.add("light-mode");
 
     localStorage.setItem("theme", "light");
+    // 🔥 FIX: Guardar el banner activo ANTES de que applyStateToDOM lo rompa
+    var _savedBannerId = window._bannerActualId || null;
     if (window.PixisState && typeof window.PixisState.applyStateToDOM === 'function') {
       window.PixisState.applyStateToDOM();
     }
-    // 🔥 FIX: Re-aplicar filtro de banner si estaba activo antes del cambio de modo
-    // applyStateToDOM() borra y re-inyecta todos los productos, por lo que el filtro
-    // activo (guardado en _bannerActualId) se pierde. Re-disparamos el input del buscador
-    // para que el motor de filtrado vuelva a aplicarse sobre los productos recién renderizados.
-    setTimeout(function() {
-      if (window._bannerActualId && searchInput) {
-        searchInput.dispatchEvent(new Event('input'));
-      }
-    }, 50);
+    // Restaurar el filtro del banner correctamente, usando el flujo completo (ejecutarFiltroBanner)
+    // y no solo un input event, para que los contenedores y el layout queden bien armados.
+    if (_savedBannerId) {
+      setTimeout(function() {
+        if (window.abrirBannerLink) {
+          window.abrirBannerLink(_savedBannerId, true); // fromHistory=true evita duplicar el URL
+        }
+      }, 150);
+    }
 
   } else {
     lightmode.disabled = true;
@@ -4182,15 +4184,19 @@ function toggleTheme() {
     body.classList.remove("light-mode");
 
     localStorage.setItem("theme", "gamer");
+    // 🔥 FIX: Guardar el banner activo ANTES de que applyStateToDOM lo rompa
+    var _savedBannerId = window._bannerActualId || null;
     if (window.PixisState && typeof window.PixisState.applyStateToDOM === 'function') {
       window.PixisState.applyStateToDOM();
     }
-    // 🔥 FIX: Re-aplicar filtro de banner si estaba activo antes del cambio de modo
-    setTimeout(function() {
-      if (window._bannerActualId && searchInput) {
-        searchInput.dispatchEvent(new Event('input'));
-      }
-    }, 50);
+    // Restaurar el filtro del banner correctamente
+    if (_savedBannerId) {
+      setTimeout(function() {
+        if (window.abrirBannerLink) {
+          window.abrirBannerLink(_savedBannerId, true);
+        }
+      }, 150);
+    }
   }
 }
 
