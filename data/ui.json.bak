@@ -96,7 +96,7 @@
         "lineHeight": "24.2px",
         "textAlign": "center",
         "display": "",
-        "transform": "translate(2px, 5px)",
+        "transform": "translate(5px, -1px)",
         "position": "relative",
         "zIndex": "100",
         "color": "rgb(255, 255, 255)",
