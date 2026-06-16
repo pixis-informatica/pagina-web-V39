@@ -4155,6 +4155,15 @@ function toggleTheme() {
     if (window.PixisState && typeof window.PixisState.applyStateToDOM === 'function') {
       window.PixisState.applyStateToDOM();
     }
+    // 🔥 FIX: Re-aplicar filtro de banner si estaba activo antes del cambio de modo
+    // applyStateToDOM() borra y re-inyecta todos los productos, por lo que el filtro
+    // activo (guardado en _bannerActualId) se pierde. Re-disparamos el input del buscador
+    // para que el motor de filtrado vuelva a aplicarse sobre los productos recién renderizados.
+    setTimeout(function() {
+      if (window._bannerActualId && searchInput) {
+        searchInput.dispatchEvent(new Event('input'));
+      }
+    }, 50);
 
   } else {
     lightmode.disabled = true;
@@ -4176,6 +4185,12 @@ function toggleTheme() {
     if (window.PixisState && typeof window.PixisState.applyStateToDOM === 'function') {
       window.PixisState.applyStateToDOM();
     }
+    // 🔥 FIX: Re-aplicar filtro de banner si estaba activo antes del cambio de modo
+    setTimeout(function() {
+      if (window._bannerActualId && searchInput) {
+        searchInput.dispatchEvent(new Event('input'));
+      }
+    }, 50);
   }
 }
 
