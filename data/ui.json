@@ -96,7 +96,7 @@
         "lineHeight": "24.2px",
         "textAlign": "center",
         "display": "",
-        "transform": "translate(5px, -1px)",
+        "transform": "translate(9px, 4px)",
         "position": "relative",
         "zIndex": "100",
         "color": "rgb(255, 255, 255)",
@@ -348,7 +348,7 @@
       "href": "#Procesadores"
     },
     "div#categorias > div > div:nth-of-type(2) > a:nth-of-type(3) > div > img": {
-      "src": "http://localhost:8080/img/categorias/cat-camara%20de%20seguridad-1780093864738.png?v=1.9242",
+      "src": "http://localhost:8080/img/categorias/cat-camara%20de%20seguridad-1780093864738.png?v=1.9637",
       "alt": "Cámara de Seguridad",
       "style": {
         "width": "",

@@ -395,46 +395,50 @@ window.PixisState = {
 
       // ─── FUENTES Y COLORES DE TEXTO DE LAS CARDS ───
       // Gamer Mode Cards
-      css += `body:not(.light-mode) .card, body:not(.light-mode) .short-card, body:not(.light-mode) .video-card {\n`;
+      const textSelectorGamer = `body:not(.light-mode) .card, body:not(.light-mode) .short-card, body:not(.light-mode) .video-card, body:not(.light-mode) .destacados .card, body:not(.light-mode) .nuevos-ingresos .card`;
+      
+      css += `${textSelectorGamer} {\n`;
       if (settings.gamerFontFamily) css += `  font-family: ${settings.gamerFontFamily}, sans-serif !important;\n`;
       css += `}\n`;
       if (settings.gamerCardTitleColor || settings.gamerCardTitleSize) {
-        css += `body:not(.light-mode) .card h3, body:not(.light-mode) .short-card h3, body:not(.light-mode) .video-card h3 {\n`;
+        css += `body:not(.light-mode) .card h3, body:not(.light-mode) .destacados .card h3, body:not(.light-mode) .nuevos-ingresos .card h3, body:not(.light-mode) .short-card h3, body:not(.light-mode) .video-card h3 {\n`;
         if (settings.gamerCardTitleColor) css += `  color: ${settings.gamerCardTitleColor} !important;\n`;
         if (settings.gamerCardTitleSize) css += `  font-size: ${settings.gamerCardTitleSize} !important;\n`;
         css += `}\n`;
       }
       if (settings.gamerCardDescColor || settings.gamerCardDescSize) {
-        css += `body:not(.light-mode) .card p, body:not(.light-mode) .short-card p, body:not(.light-mode) .video-card p {\n`;
+        css += `body:not(.light-mode) .card p, body:not(.light-mode) .destacados .card p, body:not(.light-mode) .nuevos-ingresos .card p, body:not(.light-mode) .short-card p, body:not(.light-mode) .video-card p {\n`;
         if (settings.gamerCardDescColor) css += `  color: ${settings.gamerCardDescColor} !important;\n`;
         if (settings.gamerCardDescSize) css += `  font-size: ${settings.gamerCardDescSize} !important;\n`;
         css += `}\n`;
       }
       if (settings.gamerCardPriceColor || settings.gamerCardPriceSize) {
-        css += `body:not(.light-mode) .card .precio, body:not(.light-mode) .card .precio-especial {\n`;
+        css += `body:not(.light-mode) .card .precio, body:not(.light-mode) .card .precio-especial, body:not(.light-mode) .destacados .card .precio-especial, body:not(.light-mode) .nuevos-ingresos .card .precio-especial {\n`;
         if (settings.gamerCardPriceColor) css += `  color: ${settings.gamerCardPriceColor} !important;\n`;
         if (settings.gamerCardPriceSize) css += `  font-size: ${settings.gamerCardPriceSize} !important;\n`;
         css += `}\n`;
       }
 
       // Oficina Mode Cards
-      css += `body.light-mode .card, body.light-mode .short-card, body.light-mode .video-card {\n`;
+      const textSelectorOficina = `body.light-mode .card, body.light-mode .short-card, body.light-mode .video-card, body.light-mode .destacados .card, body.light-mode .nuevos-ingresos .card`;
+      
+      css += `${textSelectorOficina} {\n`;
       if (settings.oficinaFontFamily) css += `  font-family: ${settings.oficinaFontFamily}, sans-serif !important;\n`;
       css += `}\n`;
       if (settings.oficinaCardTitleColor || settings.oficinaCardTitleSize) {
-        css += `body.light-mode .card h3, body.light-mode .short-card h3, body.light-mode .video-card h3 {\n`;
+        css += `body.light-mode .card h3, body.light-mode .destacados .card h3, body.light-mode .nuevos-ingresos .card h3, body.light-mode .short-card h3, body.light-mode .video-card h3 {\n`;
         if (settings.oficinaCardTitleColor) css += `  color: ${settings.oficinaCardTitleColor} !important;\n`;
         if (settings.oficinaCardTitleSize) css += `  font-size: ${settings.oficinaCardTitleSize} !important;\n`;
         css += `}\n`;
       }
       if (settings.oficinaCardDescColor || settings.oficinaCardDescSize) {
-        css += `body.light-mode .card p, body.light-mode .short-card p, body.light-mode .video-card p {\n`;
+        css += `body.light-mode .card p, body.light-mode .destacados .card p, body.light-mode .nuevos-ingresos .card p, body.light-mode .short-card p, body.light-mode .video-card p {\n`;
         if (settings.oficinaCardDescColor) css += `  color: ${settings.oficinaCardDescColor} !important;\n`;
         if (settings.oficinaCardDescSize) css += `  font-size: ${settings.oficinaCardDescSize} !important;\n`;
         css += `}\n`;
       }
       if (settings.oficinaCardPriceColor || settings.oficinaCardPriceSize) {
-        css += `body.light-mode .card .precio, body.light-mode .card .precio-especial {\n`;
+        css += `body.light-mode .card .precio, body.light-mode .card .precio-especial, body.light-mode .destacados .card .precio-especial, body.light-mode .nuevos-ingresos .card .precio-especial {\n`;
         if (settings.oficinaCardPriceColor) css += `  color: ${settings.oficinaCardPriceColor} !important;\n`;
         if (settings.oficinaCardPriceSize) css += `  font-size: ${settings.oficinaCardPriceSize} !important;\n`;
         css += `}\n`;
@@ -446,8 +450,11 @@ window.PixisState = {
       const speedCards = settings.rgbCardsSpeed || 6;
       
       // Selectores para aplicar el borde (excluyendo preventas / próximo ingreso)
-      const cardsSelectorGamer = `body:not(.light-mode) .card:not(.proximo-ingreso), body:not(.light-mode) .short-card:not(.proximo-ingreso), body:not(.light-mode) .video-card:not(.proximo-ingreso)`;
-      const cardsSelectorOficina = `body.light-mode .card:not(.proximo-ingreso), body.light-mode .short-card:not(.proximo-ingreso), body.light-mode .video-card:not(.proximo-ingreso)`;
+      const baseCardsGamer = `.card:not(.proximo-ingreso), .short-card:not(.proximo-ingreso), .video-card:not(.proximo-ingreso)`;
+      const cardsSelectorGamer = `body:not(.light-mode) ${baseCardsGamer}, body:not(.light-mode) .destacados .card, body:not(.light-mode) .nuevos-ingresos .card`;
+      
+      const baseCardsOficina = `.card:not(.proximo-ingreso), .short-card:not(.proximo-ingreso), .video-card:not(.proximo-ingreso)`;
+      const cardsSelectorOficina = `body.light-mode ${baseCardsOficina}, body.light-mode .destacados .card, body.light-mode .nuevos-ingresos .card`;
 
       const gamerCardBg = settings.gamerCardBgColor || '#0e0016';
       const oficinaCardBg = settings.oficinaCardBgColor || '#ffffff';
